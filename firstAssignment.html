@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <h2>Displaying current day and time.</h2>
+    </head>
+    <body>
+        <script>
+            var today = new Date();
+            var day = today.getDay();
+            var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];  
+            document.write("Today is : " + daylist[day] + ". "); 
+            document.write("<br>");
+            var hour = today.getHours();
+            var min = today.getMinutes();
+            var sec = today.getSeconds();
+            var meridem = (hour >= 12)? " PM ":" AM ";
+            hour = (hour >= 12)? hour - 12: hour;
+            if (hour===0 && meridem ===' PM ') 
+            { 
+                if (minute===0 && second===0)
+                    { 
+                        hour=12;
+                        meridem=' Noon';
+                    } 
+                 else
+                    { 
+                        hour=12;
+                        meridem=' PM';
+                    } 
+            } 
+            if (hour===0 && meridem===' AM ') 
+            { 
+                if (minute===0 && second===0)
+                { 
+                    hour=12;
+                    meridem=' Midnight';
+                } 
+                else
+                { 
+                    hour=12;
+                    meridem=' AM';
+                } 
+            } 
+            document.write("Current time is :"+hour+""+meridem+":"+min+":"+sec);  
+    
+        </script>
+    </body>
+</html>
