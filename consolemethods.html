@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <h2>Various console methods.</h2>
+    </head>
+    <body>
+        <script>
+            
+            console.log("Helloworld");        //This method writes message to the console.
+            console.error("An error occured");   //This method writes an error message to console.
+            console.warn("This is a warning"); //This method writes a warning to the console.
+            console.clear("Cleared")            //It clears the console.
+           
+            console.group();  //This method indicates start of the group and everything will be inside it.
+            console.log("I'm inside this group");
+            console.groupEnd();    //It indicates end ofthe group.
+            console.log("And we are back.");
+
+            console.time('Time taken'); //starts the timer in a console view.
+            var a = {name:"Amit", age:"20", city:"Mumbai"};
+            var b = {name:"Asha", age:"20", city:"Mumbai"};
+            var c = {name:"Jay", age:"20", city:"Mumbai"};
+            console.table({a,b,c}); //results in a table format.
+
+            console.log('%c Custom message','color:blue');
+            console.timeEnd('Time taken');  //ends the timer and results the time taken.
+            
+            
+        
+           
+        </script>
+    </body>
+</html>
