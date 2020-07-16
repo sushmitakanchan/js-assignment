@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h2>Strings and Arrays</h2>
+</head>
+<body>
+    <script>
+        // string can be stored in 3 ways.
+        let a = "Amit";
+        let b = 'Anjali';
+        let c = `Ash`;
+       console.log({a,b,c});
+        // To find the length of the text.
+        var txt = "An apple a day keeps a doctor away.";
+        var str = txt.length;
+        console.log(str);
+        var index = txt.indexOf("doctor")
+        console.log(index);
+        var srch = txt.search("doctor");
+        var ab = txt.lastIndexOf("a");
+        console.log(ab);
+        console.log(srch);
+         var ab = txt.toLowerCase();
+        var ab = txt.toUpperCase();
+        
+         var ab = txt.slice(4,8);
+         var ab = txt.substr(4,8);
+         var ab = "          Hello!";
+         var str = ab.trim();
+         console.log(str);
+         var ab = txt.charAt(12);
+         console.log(ab);
+
+
+        // Arrays
+        var fruits = ["apple","mango","grapes"];
+        fruits[0]= "Chickoo";
+        console.log(fruits);
+        var len = fruits.length;
+        console.log(fruits.length);
+        console.log(fruits[0]);
+        var last = fruits[fruits.length-1];
+        console.log(last);
+         var p = fruits.push("cherry");
+        var p = fruits.pop();
+        var s = fruits.shift();
+        var sh = fruits.unshift("lemon");
+        var p = fruits.sort();
+        var p = fruits.reverse();
+        console.log(fruits);
+
+        var person = {name:"John",city:"goa",age:"20"};
+        console.log(person.name);
+        var len = person.length;
+        console.log(person.length);
+
+    
+
+
+    </script>
+    
+</body>
+</html>
